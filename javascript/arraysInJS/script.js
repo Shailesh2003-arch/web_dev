@@ -110,3 +110,10 @@ console.log(array);
 console.log(array.length);
 // output: ['Arnav', 'shailesh', 3, 4, 5, 6, 34, 23, 45, empty]
 //         10
+
+
+// 10) concat() method combines two or more arrays. This method returns a new array without modifying any existing arrays.
+
+let names = ["Uday","Nahush","Shivam","Aryan"];
+extended_array = array.concat(names);
+console.log(extended_array);
