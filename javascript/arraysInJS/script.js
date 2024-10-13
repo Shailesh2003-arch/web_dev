@@ -117,3 +117,5 @@ console.log(array.length);
 let names = ["Uday","Nahush","Shivam","Aryan"];
 extended_array = array.concat(names);
 console.log(extended_array);
+
+// outputs: ['Arnav', 'shailesh', 3, 4, 5, 6, 34, 23, 45, empty, 'Uday', 'Nahush', 'Shivam', 'Aryan']
