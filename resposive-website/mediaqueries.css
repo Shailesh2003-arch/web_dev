@@ -1,0 +1,23 @@
+@media screen and (max-width:750px) {
+    .service-container{
+     flex-direction: column;
+     margin: auto;
+     width: 80%;
+     }
+     .service-card{
+        width: 230px;
+        
+     }
+
+     .card-content{
+        padding-top: 3px;
+        padding-left: 8px;
+    }
+    .dish{
+        width: 220px;
+    }
+    .featured-dishes-container{
+        width: 80%;
+        margin: auto;
+    }
+ }

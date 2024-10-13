@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Time in Javascript</title>
+</head>
+<body>
+   <div class="container">
+    <span id="currTime">The Current time is : </span>
+   </div> 
+</body>
+<script>
+
+// getFullYear() represents the full year...
+console.log(new Date().getFullYear());
+
+//getMonth() gives the current month, where month starts from 0-11 (0-jan)
+console.log(new Date().getMonth()+1);
+
+//getDate() gives the current day of the month...
+console.log(new Date().getDate());
+
+//getDay() gives the week of the day (0-sunday,6-saturday)
+console.log(new Date().getDay());
+    
+//getDay() representing saturday with 6...
+
+let yesterday = new Date("2024-10-12");
+console.log(yesterday.getDay());
+
+
+
+
+// Time Components...
+
+//getHours() gives the current hour in (0-23) (24Hr-format) 
+
+console.log(new Date().getHours()); //outputs as of now is 13 representing 1 o'clock
+
+//getMinutes() gives the current minutes
+
+console.log(new Date().getMinutes()); // outputs 5 as of now cuz its 1'5 pm
+
+// let timenow = document.getElementById('currTime').innerHTML += time;
+</script>
+</html>

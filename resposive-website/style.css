@@ -1,0 +1,287 @@
+/* font links */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navbar section styling starts */
+
+.navbar{
+    background-color: rgb(13, 15, 15);
+    width: 100%;
+    display: flex;
+    height: 44px;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: var(--main-font);
+    font-weight: var(--menu-font-weight);
+
+
+}
+
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar ul li a{ 
+    color: #f2f2f2;
+    padding: 4px 8px;
+    text-decoration: none;
+
+
+}
+
+.navbar ul li a:hover{
+    color: #FA9805;
+}
+
+/* navbar section styling ends */
+
+#home{
+    
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+
+
+#home::before{
+    content: '';
+    background: url('/resposive-website/resto_1.jpg') center center/cover no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.98;
+    background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+
+.home-container{
+    /* border: 2px solid red; */
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--main-font);
+}
+
+
+.main-content p{
+    color: #f2f2f2;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 1rem;
+    font-family: var(--main-font);
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+
+.primary-btn{
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-family: var(--main-font);
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+
+}
+
+
+.primary-btn:hover{
+    background-color: #B24712;
+    color: #f2f2f2;
+}
+
+
+
+
+
+
+
+/* services section */
+
+.service-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.service-card{
+    width: 240px;
+    border-radius: 12px;
+    margin:7px;
+    background-color: rgb(18, 20, 24);
+    /* border: 2px solid red; */
+    color: #f2f2f2;
+    font-family: var(--main-font);
+}
+
+
+.service-item-image img{
+    display: block;
+    width: 100%;
+    margin: auto;
+    
+}
+
+
+.card-content{
+    padding: 2px 7px;
+    
+}
+
+.service-des{
+margin-top: 4px;
+}
+
+
+
+.featured-dishes-container{
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+justify-content:center;
+align-content: center;
+
+}
+
+.dish{
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 240px;
+height: 400px;
+color: #f2f2f2;
+border-radius: 12px;
+font-family: var(--main-font);
+margin: 4px;
+background-color: rgb(21 24 32);
+}
+
+.dish-image img{
+width: 100%;
+display: block;
+height: auto;
+margin: auto;
+}
+
+.dish-card-content{
+padding: 4px 8px;
+
+
+}
+
+
+.button-section{
+    margin-top: 6px;
+}
+
+
+.card-btn{
+margin: 4px 0px;
+padding: 6px;
+border-radius: 12px;
+    font-family: var(--main-font);
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+
+
+.card-btn:hover{
+background-color: #B24712;
+color: #f2f2f2;
+outline: 2px solid #f2f2f2;
+}
+
+
+
+
+
+/* contact section*/
+
+#contact{
+    position: relative;
+    color: #f2f2f2;     
+    font-family: var(--main-font);
+    height:100vh;
+}
+
+#contact::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url('/resposive-website/contact-bg.jpg') top center/cover no-repeat;
+    opacity:0.99;
+}
+
+
+#contact-box{
+    padding-bottom: 34px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 40%;
+    margin: auto;
+}
+
+
+#contact-box input, #contact-box textarea{
+    width: 100%;
+    border-radius: 9px;
+    border: none;
+    padding: 12px;
+
+}
+
+
+#contact-box .form-group label{
+    font-size: 1.2rem;
+}
+
+#contact-box .form-group input{
+    padding: 8px;
+    border-radius: 12px;
+    
+}
+
+.form-group button{
+    padding: 10px 18px;
+    border-radius: 9px;
+    cursor: pointer;
+    border: none;
+   font-family: var(--main-font);
+   font-size: 1rem;
+   font-weight: 500;
+   background-color: #424242;
+   margin-top: 8px;
+   color: #f2f2f2;
+}
+
+.form-group button:hover{
+    background-color: #042C32;
+}
+

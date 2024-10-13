@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url('/FitnessWebsites/assets/images/gym-bg.jpg') center center fixed no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    font-family: 'Bai jamjuree','cursive';
+}
+
+
+
+
+
+.logo{
+    /* border: 2px solid red; */
+    display: inline-block;
+    height: 70px;
+    
+}
+
+.logo img{
+    width: 120px;
+    height: auto;
+    filter: invert();
+    position: relative;
+    top: -18px;
+}
+
+
+.navbar{
+    /* border: 2px solid yellow; */
+    display: inline-block;
+    position: absolute;
+    width: 700px;
+    margin-left:300px;
+    height: 70px;
+    font-weight: 600;
+}
+
+.navbar li{
+    list-style: none;
+    display: inline-block;
+    padding-top: 28px;
+
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    
+}
+
+
+.navbar li a:hover{
+    text-decoration: underline;
+    color: aquamarine;
+   
+    
+}
+
+
+
+
+.catbuttons{
+    display: inline-block;
+    /* border: 2px solid yellow; */
+    color: white;
+    position: absolute;
+    padding-top: 28px;
+    right: 90px;
+    height: 70px;
+}
+
+
+.btn{
+    padding: 8px 16px;
+    margin: 0px 12px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Bai jamjuree';
+    font-weight: bold;
+}
+
+.btn:hover{
+    background-color:aquamarine;
+    color: black;
+}
