@@ -18,9 +18,9 @@
 
 // A simple for loop printing from 1 to 10...
 
-// for(i=1;i<=10;i++){
-//     console.log(i);
-// }
+for(i=1;i<=10;i++){
+    console.log(i);
+}
 
 /*output: 1
           2
@@ -68,3 +68,72 @@ i++;
             9
             10
 */
+
+/* 3) do-while loop : do-while loop is similar to while loop but the only thing is do-while loop runs at least once even if the condition is false from the beginning...
+This happens because the condition is evaluated after the code block runs, unlike other loops that check the condition first 
+*/
+
+
+let j = 11;
+do {
+console.log(j);
+j++;
+}
+while(j<=10);
+
+
+// here it will print value of j that is 11 even if the condition is false that is j<=10...
+
+
+// 4) forEach() loop in JavaScript is a built-in array method that allows you to execute a function on each element of an array. It’s ideal when you want to perform an operation on every item without modifying the array.
+
+
+Syntax: 
+        array.forEach(function(element, index, array) {
+            // Code to execute for each element
+        });
+
+// Example
+            let arr = [10,20,30,40,50];
+            arr.forEach(element => {
+                console.log(element*2);
+            });
+
+console.log(arr);
+
+// output: 20 40 60 80 100
+
+
+// 5) for...of loop: Iterates over iterable objects (arrays, strings).
+  
+let myString = "Shailesh";
+
+for (const iterator of myString) {
+    console.log(iterator);
+}
+
+/* outputs: S
+            h
+            a
+            i
+            l
+            e
+            s
+            h
+*/
+
+
+// 5) for in loop iterates over object properties...
+
+let obj = {
+name:'shailesh',
+age:19
+};
+
+for (const key in obj) {
+    if (Object.prototype.hasOwnProperty.call(obj, key)) {
+        const element = obj[key];
+        console.log(element);
+        
+    }
+}
