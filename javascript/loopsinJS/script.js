@@ -48,7 +48,7 @@
 
     */
 
-// A simple for while printing from 1 to 10...
+// A simple while loop printing from 1 to 10...
 
 let i = 1;
 while(i<=10){
