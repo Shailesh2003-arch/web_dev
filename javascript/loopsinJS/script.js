@@ -18,9 +18,9 @@
 
 // A simple for loop printing from 1 to 10...
 
-for(i=1;i<=10;i++){
-    console.log(i);
-}
+// for(i=1;i<=10;i++){
+//     console.log(i);
+// }
 
 /*output: 1
           2
@@ -32,4 +32,39 @@ for(i=1;i<=10;i++){
           8
           9
           10
+*/
+
+
+// 2) While loop runs a block of code until a certain condition is true...
+
+    // Syntax of while loop
+
+    /* 
+    initalization;
+    while(condition){
+    //block of code...
+    updation : (increment/decrement)
+    }
+
+    */
+
+// A simple for while printing from 1 to 10...
+
+let i = 1;
+while(i<=10){
+console.log(i);
+i++;
+}
+
+/*
+    output :1
+            2
+            3
+            4
+            5
+            6
+            7
+            8   
+            9
+            10
 */
