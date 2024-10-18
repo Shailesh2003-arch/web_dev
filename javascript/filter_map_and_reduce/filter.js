@@ -1,6 +1,4 @@
-// array function cannot return so it becomes impossible to perform certain operation on an element if it's required for further process 
-// so to overcome this problem 
-// filter() was introduced...
+// The filter() method in JavaScript creates a new array with all elements that pass the test implemented by the provided function. It filters the elements based on a condition and includes only those that satisfy the condition.
 
 
 
