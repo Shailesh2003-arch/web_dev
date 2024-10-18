@@ -72,3 +72,53 @@ let arr = [10,20,30,40,50];
 // })
 
 // console.log(adults);
+
+// Q4. Filter Items Based on Price
+// You are given an array of products where each product is an object with name and price properties. Filter out products that cost more than $50.
+
+// const products = [
+//     { name: "Shirt", price: 30 },
+//     { name: "Shoes", price: 60 },
+//     { name: "Hat", price: 20 },
+//     { name: "Jacket", price: 100 }
+//   ];
+
+// const product_over_fifty_dollars = products.filter((element)=>{
+//     return element.price<50;
+// })
+
+// console.log(product_over_fifty_dollars);
+
+
+// Q5. Filter Out Incomplete Tasks
+// You have an array of task objects where each task has a title and a completed status (boolean). Filter out the tasks that are completed.
+
+// const tasks = [
+//     { title: "Do laundry", completed: true },
+//     { title: "Clean the house", completed: false },
+//     { title: "Buy groceries", completed: true },
+//     { title: "Pay bills", completed: false }
+//   ];
+
+// const incompleteTasks = tasks.filter((element)=>{
+//     return element.completed == false;
+// });
+// console.log(incompleteTasks); 
+
+
+// Q7. Filter Movies by Rating
+// You are given an array of movies, where each movie has a title and a rating. Filter out movies that have a rating less than 8.
+
+// const movies = [
+//     { title: "Inception", rating: 8.8 },
+//     { title: "The Room", rating: 3.7 },
+//     { title: "Interstellar", rating: 8.6 },
+//     { title: "Sharknado", rating: 3.3 }
+//   ];
+
+//   const topRatedMovies = movies.filter((element)=>{
+//     return element.rating>=8;
+//   });
+// console.log(topRatedMovies);
+
+
