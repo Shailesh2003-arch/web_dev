@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM |Nodelist</title>
+    <style>
+        body{
+            background-color: #212121;
+            color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <li class="days">Monday</li>
+        <li class="days">Tuesday</li>
+        <li class="days">Wednesday</li>
+        <li class="days">Thursday</li>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent');
+    console.log(parent);
+    console.log(parent.children[0].innerHTML);
+    for (let index = 0; index < parent.children.length; index++) {
+        console.log(parent.children[index].innerHTML);  
+    }
+    parent.children[0].style.color = 'green';
+</script>
+</html>

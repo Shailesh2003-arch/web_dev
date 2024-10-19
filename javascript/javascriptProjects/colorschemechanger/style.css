@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    /* background-color: olive; */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+}
+
+
+#grey{
+    background-color: gray;
+}
+
+#green{
+    background-color: green;
+}
+
+#yellow{
+    background-color: yellow;
+}
+
+#aqua{
+    background-color: aqua;
+}
