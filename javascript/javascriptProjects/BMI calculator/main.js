@@ -10,7 +10,6 @@ form.addEventListener('submit',function(event){
     
 
     let weight = parseInt(document.querySelector('#weight').value);
-   
 
     let result = document.querySelector('#result');
 
