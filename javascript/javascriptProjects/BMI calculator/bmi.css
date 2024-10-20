@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #212121;
+    color: #f2f2f2;
+}
+
+
+.form-container{
+    margin-top: 40px;
+    font-size: 20px;
+    height: 540px;
+    width: 350px;
+    border-radius: 10px;
+    background-color: rgba(65, 80, 85, 0.578);
+    font-family: "Arima", system-ui;
+}
+
+
+.form-group{
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Arima", system-ui;
+    
+}
+
+.form-group input{
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    margin-top: 2.5px;
+    font-size: 16px;
+    font-family: "Arima", system-ui;
+}
+
+#bmi-btn{
+    display: flex;
+    margin: 4px auto;
+    padding: 10px 18px;
+    border-radius: 10px;
+    border: 0;
+    font-family: "Arima", system-ui;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+#bmi-btn:hover{
+    background-color: rgb(245, 156, 48);
+    box-shadow: 0px 4px 10px rgba(222, 166, 14, 0.658);
+}
+
+
+.weight-guide{
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#result{
+display: flex;
+justify-content: center;
+}
+
+#bmi-descripton{
+    display: flex;
+    justify-content: center;
+    color: aqua;
+}
