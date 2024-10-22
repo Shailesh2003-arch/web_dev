@@ -4,25 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SetTimeOut and SetInterval</title>
-    <style>
-        #popup {
-            display: none;
-            background-color: lightblue;
-            padding: 20px;
-            border: 1px solid black;
-            margin: 20px 0;
-        }
-    </style>
+    
 </head>
 
 <body>
-    <h2>Notification Popup Example</h2>
+    <h2>SetTimeout & clearTimeout in Js</h2>
     
-<button id="cancelBtn">Cancel Notification</button>
-<div id="popup">This is your delayed notification!</div>
-<div class="container">
-    <span id="time">Time now is :</span>
-</div>
-    <script src="script.js"></script>
+<button id="stop">Stop</button>
 </body>
+<script>
+    
+    const id = setTimeout(() => {
+       console.log("Shailesh");
+    }, 2000); // logs shailesh into the console after 2 seconds...
+
+    // clearTimeout(id); // clears the setTimeout api... (Remember setTimeout is an external api from the browser environment)
+    // console.log("setTimeOut cleared...");
+
+    // we will be adding the setTimeOut on the click of the button 
+
+    document.getElementById('stop').addEventListener('click',function(){
+        clearTimeout(id); // this will prevent/discard the setTimeout function from active state to dead state... so on clicking the button
+        // the setTimeout will get cleared 
+    })
+
+    // we can also pass the refernce inside the setTimeout()...
+
+</script>
 </html>

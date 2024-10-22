@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval and clearInterval</title>
+</head>
+<body>
+    <h2>setInterval & clearInterval</h2>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+ 
+var interval; // allows you to handle the start and stop of event as this is global variable, you can use the let/var...
+const startbtn = document.getElementById('start');
+const stopbtn = document.getElementById('stop');
+
+startbtn.addEventListener('click',function(){
+    interval = setInterval(function(){
+    console.log("Shailesh",Date.now(2024,9,22).toLocaleString());
+},1000);
+})
+
+stopbtn.addEventListener('click',function(){
+ clearInterval(interval);   
+})
+
+
+    
+</script>
+</html>
