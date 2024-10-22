@@ -6,21 +6,62 @@
     <title>Events in javascript</title>
 </head>
 <style>
-    button{
-        padding: 12px 14px;
-        background-color: rgb(47, 47, 60);
-        color: white;
-        border-radius: 7px;
-        outline: none;
-        border: 0;
-        cursor: pointer;
+    body{
+        background-color: #414141;
+        color: aliceblue;
     }
 </style>
 <body>
-    <div class="container">
-        <p id="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum cumque repellat tempora aliquid exercitationem perferendis modi assumenda, nostrum maxime! Ullam sit, praesentium, non quos maxime tempora quaerat deserunt qui harum, quis perspiciatis consequuntur neque.</p>
-        <button id="" onclick="hidePara()">Submit</button>
+    <h2>Amazing Images</h2>
+    <div>
+        <ul id="images">
+            <li><img src="/flower.jpg" width="200"  id="flower" alt=""></li>
+            <li><img src="/tokyo.jpg"  width="200"  id="tokyo"  alt=""></li>
+            <li><img src="/owl.jpg"    width="200"  id="owl"     alt="" ></li>
+            <li><img src="/gta.jpg"    width="200"  id="gta"     alt=""></li>
+            <li><a href="https://google.com" target="_blank" style="color: aliceblue;" id="google">Google</a></li>
+        </ul>
     </div>
-    <script src="script.js"></script>
+    <script>
+        // document.getElementById('owl').onclick = function(){
+        //     console.log(this);
+        //     alert("owl clicked");
+        // }
+
+        // document.getElementById('images').addEventListener('click',function(event){
+        //     // console.log(event);
+        //     // console.log(typeof(event));
+        // //    event.preventDefault();  
+        //     console.log(`Ul clicked`);
+        // },)
+
+
+
+        // document.getElementById('owl').addEventListener('click',function(event){
+        //     // console.log(event);
+        //     // console.log(typeof(event));
+        // //    event.preventDefault();  
+        //     event.stopPropagation();// stops the propogation (stops the bubbling)...
+        //     console.log(`Owl clicked again`);
+        // },)
+
+
+        // document.getElementById('google').addEventListener('click',function(event){
+        //     event.preventDefault();// prevents the default behaviour of the event...
+        // },)
+
+
+        // small project that removes the li when you click on it...
+
+        document.querySelector('#images').addEventListener('click',function(event){
+            console.log(event);// prevents the default behaviour of the event...
+            console.log(event.target);// gives you the source element from where the event was triggered..
+            const removeli = event.target.parentNode;
+            if(event.target.tagName === 'IMG'){
+                removeli.remove();
+            }
+
+        },)
+    </script>
 </body>
 </html>

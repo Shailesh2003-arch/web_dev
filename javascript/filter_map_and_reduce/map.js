@@ -10,22 +10,22 @@
 // console.log(reciever);
 
 
-const myNums = [1,2,3,4,5,6,7,8,9,10];
-let newNums = myNums.map((element)=>{
-    return element*2;
-})
+// const myNums = [1,2,3,4,5,6,7,8,9,10];
+// let newNums = myNums.map((element)=>{
+//     return element*2;
+// })
 
-// console.log(newNums);
+// // console.log(newNums);
 
-// const inital_val = 0;
+// // const inital_val = 0;
 
-// inital_value + current_val...
+// // inital_value + current_val...
 
-const sum = myNums.reduce((inital_value,curr_value)=>{
-    console.log(`inital value is : ${inital_value}`);
-    console.log(`current value is : ${curr_value}`);
+// const sum = myNums.reduce((inital_value,curr_value)=>{
+//     console.log(`inital value is : ${inital_value}`);
+//     console.log(`current value is : ${curr_value}`);
 
-    return inital_value + curr_value;
-},0)
+//     return inital_value + curr_value;
+// },0)
 
-console.log(sum);
+// console.log(sum);
