@@ -41,26 +41,51 @@ let data; // used for storing the data that will be fetched from the api...
 // })
 
 
-const promiseFour = new Promise(function(resolve,reject){
+// const promiseFour = new Promise(function(resolve,reject){
        
-       setTimeout(function(){
-        let error = true; // delibraterly making an error to understand how to handle the case when we get a rejection for a promise...
-        if(!error){
-            resolve({username:"shailesh",password:"123456"})
-        }
-        else{
-            reject(`ERROR: Something went wrong`)
-        }
-       },1000);
+//        setTimeout(function(){
+//         let error = true; // delibraterly making an error to understand how to handle the case when we get a rejection for a promise...
+//         if(!error){
+//             resolve({username:"shailesh",password:"123456"})
+//         }
+//         else{
+//             reject(`ERROR: Something went wrong`)
+//         }
+//        },1000);
+// })
+
+// promiseFour.then(function(user){
+//     console.log(user);
+//     return user.username;
+// }).then((username)=>{
+//     console.log(username);
+// }).catch(function(error){
+//     console.log(error);
+// }).finally(()=>{
+//     console.log(`Your promise has either been resolved or rejected, please don't wait anymore for further result...`)
+// })
+
+
+const promiseFive = new Promise(function(resolve,reject){
+    setTimeout(function(){
+                let error = true; // delibraterly making an error to understand how to handle the case when we get a rejection for a promise...
+                if(!error){
+                    resolve({username:"Riyansh",password:"123456"})
+                }
+                else{
+                    reject(`ERROR: Javascript went wrong`)
+                }
+               },1000);
 })
 
-promiseFour.then(function(user){
-    console.log(user);
-    return user.username;
-}).then((username)=>{
-    console.log(username);
-}).catch(function(error){
-    console.log(error);
-}).finally(()=>{
-    console.log(`Your promise has either been resolved or rejected, please don't wait anymore for further result...`)
-})
+
+async function consumePromiseFive(){
+    try {
+        const response = await promiseFive // promise is an object so we dont consume it as `promiseFive()`
+        console.log(response);
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+consumePromiseFive();
